@@ -1,10 +1,10 @@
 import {program} from 'commander';
 
 const options = program
-  .requiredOption('--product-id <number>', '209371')
-  .option('--schedule-no <number>', '100002')
-  .requiredOption('--slack-webhook-url <string>', 'https://hooks.slack.com/services/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')
-  .option('--poll-interval-millis <number>', '500', '500');
+  .requiredOption('--product-id <number>', '')
+  .option('--schedule-no <number>', '')
+  .requiredOption('--slack-webhook-url <string>', '')
+  .option('--poll-interval-millis <number>', '', '500');
 
 export default class Config {
   static current: Config;
